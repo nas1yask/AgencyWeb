@@ -1,0 +1,64 @@
+.subscribe{
+    width: 100%;
+    background-color: rgb(232, 244, 250);
+    padding: 130px 0;
+    position: relative;
+    .element1{
+        position: absolute;
+        top: 0;
+        right: 360px;
+        top: 100px;
+    }
+    .element2{
+        position: absolute;
+        top: 0;
+        left: 150px;
+        top: -40px;
+    }
+    .container{
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        h1{
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 170%;
+            color: rgb(37, 37, 37);
+            width: 400px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        form{
+            .flex_between;
+            div{
+                background-color: #fff;
+                padding: 17px 0;
+                font-size: 14px;
+                padding-left: 30px;
+                padding-right: 115px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 84px 0px rgba(0, 0, 0, 0.07);
+                input{
+                    width: 300px;
+                    &::-webkit-input-placeholder{
+                        color: rgb(120, 120, 120);                
+                    }
+                }
+            }
+            a{
+                font-weight: 500;
+                color: rgb(255, 244, 244);
+                border-radius: 10px;
+                background: rgb(0, 0, 0);
+                text-transform: uppercase;
+                font-size: 14px;
+                padding: 17px 35px;
+                transition: 0.2s;
+                &:hover{
+                    cursor: pointer;
+                    background-color: @mainColor1;
+                }
+            }
+        }
+    }
+}

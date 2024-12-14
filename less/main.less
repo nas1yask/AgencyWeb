@@ -1,0 +1,146 @@
+.blue{
+    position: absolute;
+    right: -260px;
+    top: 30%;
+    width: 23%;
+}
+
+.whatsapp_widget{
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    .flex_center;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 999;
+    box-shadow: 0px 0px 3px #0000004c;
+    transition: 0.3s;
+    cursor: pointer;
+    i{
+        color: #43AF36;
+        font-size: 34px;
+        transition: 0.3s;
+    }
+    &:hover{
+        background: #43AF36;
+        i{
+            color: #fff;
+        }
+    }
+}
+
+main{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    header{
+        width: 100%;
+        .container{
+            width: 95%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 0;
+            .flex_between;
+            aside{
+                .flex_between;
+                menu{
+                    width: 436px;
+                    .flex_between;
+                    margin-right: 70px;
+                    li{
+                        a{
+                            transition: 0.2s;
+                            position: relative;
+                            &:hover{
+                                color: @mainColor1;
+                            }
+                            &::before{
+                                content: '';
+                                width: 8px;
+                                height: 8px;
+                                background: rgba(0,0,0,0);
+                                border-radius: 50%;
+                                position: absolute;
+                                left: -8px;
+                                top: -6px;
+                                transition: 0.2s;
+                            }
+                            &:hover::before{
+                                background: rgb(8, 211, 187);
+                            }
+                        }
+                    }
+                }
+                button{
+                    font-size: 13px;
+                    border-radius: 6px;
+                    padding: 10px 26px;
+                    background-color: rgba(62, 179, 234, 0.208);
+                    color: @mainColor1;
+                    transition: 0.2s;
+                    &:hover{
+                        background-color: @mainColor1;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    section{
+        background: rgba(16, 144, 203, 0.1);
+        width: 100%;
+        height: calc(100% - 79.3333px);
+        overflow: hidden;
+        .container{
+            .c;
+            position: relative;
+            height: 100%;
+            .flex_between;
+            article{
+                width: 600px;
+                h1{
+                    font-size: 35px;
+                    font-weight: 600;
+                    line-height: 50px;
+                    margin-bottom: 16px;
+                    span{
+                    color: @mainColor1;
+                    font-size: 35px;
+                    font-weight: 600;
+                    }
+                }     
+                p{
+                    color: rgb(92, 92, 92);
+                    line-height: 204.3%;
+                    margin-bottom: 45px;
+                }
+                .btns{
+                    button{
+                        color: @mainColor1;
+                        background-color: #fff;
+                        padding: 9px 40px;
+                        border: 1px solid @mainColor1;
+                        border-radius: 10px;
+                        font-size: 14px;
+                        transition: 0.2s;
+                        &:nth-child(1){
+                            margin-right: 7px;
+                        }
+                        &:hover{
+                            background-color: @mainColor1;
+                            color: #fff;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            img{
+                width: 37%;
+                transform: translateY(-50px);
+            }
+        }
+    }
+}

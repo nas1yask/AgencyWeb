@@ -1,0 +1,75 @@
+.blog{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .container{
+        width: 95%;
+        max-width: 1400px;
+        margin: 0 auto;
+        position: relative;
+        
+        .prev{
+            width: 20px;
+            transform: rotate(180deg);
+            position: absolute;
+            top: calc(50% - 10px);
+            opacity: 0.5;
+            cursor: pointer;
+            z-index: 2;
+        }
+        .slider{
+            article{
+                padding: 0 65px;
+                >img{
+                    width: 75%;
+                    margin: 0 auto;
+                    margin-bottom: 23px;
+                }
+                h2{
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 34px;
+                    letter-spacing: 1%;
+                    margin-bottom: 10px;
+                }
+                p{
+                    text-align: justify;
+                    line-height: 28px;
+                    letter-spacing: 1%;
+                    font-size: 14px;
+                    color: rgb(66, 66, 66);
+                }
+                section{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 25px;
+                    img{
+                        margin-right: 15px;
+                        width: 50px;
+                    }
+                    aside{
+                        h4{
+                            font-size: 16px;
+                            font-weight: 500;
+                            letter-spacing: 1%;
+                        }
+                        span{
+                            font-size: 12px;
+                            letter-spacing: 1%;
+                            color: rgb(123, 123, 123);
+                        }
+                    }
+                }
+            }
+        }
+        .next{
+            width: 20px;
+            position: absolute;
+            top: calc(50% - 10px);
+            right: 0;
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+}
